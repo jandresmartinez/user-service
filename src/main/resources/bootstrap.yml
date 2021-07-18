@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: ${SPRING_APPLICATION_NAME:user-service}
+  cloud:
+    config:
+      failFast: false
+      uri: http://${CONFIG_SERVER_DOMAIN:localhost}:${SERVER_PORT:8888}
